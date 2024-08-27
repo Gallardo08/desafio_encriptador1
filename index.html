@@ -7,33 +7,33 @@
     <link rel="stylesheet" href="style/Estilos.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Encriptador de Texto</h1>
-        </header>
-
-        <main>
-            <section class="input-section">
-                <textarea id="inputTexto" placeholder="Ingrese su texto aquí..." rows="10"></textarea>
-            </section>
-
-            <section class="action-buttons">
+    <div class="app-container">
+        <div class="input-container">
+            <textarea id="inputTexto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" id="minusculasSwitch">
+                    <span class="slider"></span>
+                </label>
+                <span>Solo letras minúsculas y sin acentos</span>
+            </div>
+            <div class="action-buttons">
                 <button id="btnEncriptar" class="button">Encriptar</button>
                 <button id="btnDesencriptar" class="button">Desencriptar</button>
-            </section>
-
-            <section class="result-section">
-                <div id="resultado">Ningún mensaje fue encontrado</div>
-            </section>
-        </main>
-
-        <footer>
-            <p>Encriptador de Texto - Desarrollado en JavaScript</p>
-        </footer>
+            </div>
+        </div>
+        <div class="output-container">
+            <div id="resultado">
+                <img id="placeholderImg" src="imagens/1.png" alt="Sin mensaje encontrado" class="placeholder-img">
+            </div>
+        </div>
     </div>
 
     <script src="src/funcionalidad.js"></script>
 </body>
 </html>
+
+
+
 
 
